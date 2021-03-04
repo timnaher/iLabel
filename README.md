@@ -8,7 +8,7 @@ These labels can be used to train the CNN U'n'Eye by Bellet et al. (2018) availa
 
 # References
 Bellet ME, Bellet J, Nienborg H, Hafed ZM, Berens P. Human-level saccade detection performance using deep neural networks.<br /> 
-    J Neurophysiol. 2019 Feb 1;121(2):646- 661. doi: 10.1152/jn.00601.2018. Epub 2018 Dec 19. PMID: 30565968.<br />
+   `<addr>` J Neurophysiol. 2019 Feb 1;121(2):646- 661. doi: 10.1152/jn.00601.2018. Epub 2018 Dec 19. PMID: 30565968.<br />
 Engbert, R., & Kliegl, R. (2003). Microsaccades uncover the orientation of covert attention. Vision<br />
     Research, 43 , 1035–1045. Available from http://dx.doi.org/10.1016/S0042-6989(03)00084-1<br />
 Engbert, R., & Mergenthaler, K. (2006). Microsaccades are triggered by low level retinal image slip.<br />
