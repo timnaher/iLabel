@@ -7,7 +7,7 @@ These labels can be used to train the CNN U'n'Eye by Bellet et al. (2018) availa
 
 
 # References
-Bellet ME, Bellet J, Nienborg H, Hafed ZM, Berens P. Human-level saccade detection performance using deep neural networks.<br /> 
+Bellet ME, Bellet J, Nienborg H, Hafed ZM, Berens P. Human-level saccade detection performance using deep neural networks.
      J Neurophysiol. 2019 Feb 1;121(2):646- 661. doi: 10.1152/jn.00601.2018. Epub 2018 Dec 19. PMID: 30565968.
 
 
