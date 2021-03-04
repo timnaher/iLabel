@@ -1,7 +1,9 @@
 # iLabel
 iLabel is a MATLAB app to manually label eye movements such as saccades/microsaccades and post-saccadic oscillations (PSO's) in eye-tracking data. iLabel will suggest potential saccadic events based on an a velocity threshold algorithm (Engbert & Kliegl, 2003; Engbert & Mergenthaler, 2006). The app outputs binary labels for fixation (0), saccades (1), and PSO's (2). 
-/n
+<br />
 These labels can be used to train the CNN U'n'Eye by Bellet et al. (2018) available at: https://github.com/berenslab/uneye
+<br />
+<br />
 
 
 # References
