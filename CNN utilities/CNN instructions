@@ -1,1 +1,23 @@
 Using the GUI with U'n'Eye CNN:
+
+
+Labeling Saccades:
+  1) preprocess eye traces (remove line noise / blinks) and cut in 1s segments  
+    Note: blink labeling will be added to the GUI as well soon
+  2) put x and y vectors in separate matricies and label them with capital "X" or "Y" in the name for iLabel to find them
+  3) install iLabel
+  4) navigate to folder with eye data
+  5) open iLabel and label your data. The app appends the current trials to a matrix but also saves the individual trials with their trial number
+  6) label around 200 seconds
+
+Training the network:
+  1) download the CNN from https://github.com/berenslab/uneye and install
+  2) train the network with your newly labled data according to the discription on github
+  3) save the weights
+  
+Predict saccades/PSOs from MATLAB
+  1) when using different length trials, make them all 1 length and fill with NaN (e.g. with padcat: https://de.mathworks.com/matlabcentral/fileexchange/22909-padcat)
+  2) call the python script from MATLAB and pass information such as data Fs, saccade MINDUR, and minimum separation
+  3) load the binary predictions and/or class probabilities in MATLAB and run post-detection script to determine saccade durations, peak velocity, etc
+  
+  
