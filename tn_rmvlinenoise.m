@@ -1,5 +1,4 @@
 function [data] = tn_rmvlinenoise(data,nf,nharm,srate)
-
 % removed power line artifacts with discrete fourier filter
 % data: should be row vector
 % nf:  frequency of artifact

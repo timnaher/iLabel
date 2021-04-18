@@ -12,7 +12,6 @@ function [sac,v] = msdetect(data,parameters)
 % options : structure with information
 
 % get parameters
-
 VFAC     = parameters.VFAC;
 MINDUR   = parameters.MINDUR;
 srate    = parameters.srate;
@@ -20,7 +19,7 @@ mergeint = parameters.mergeint;
 slength  = parameters.slength;
 LNFREQ   = parameters.LNFREQ;
 
-
+% remove line noise
 if parameters.rmvlinenoise
     data(1,:) = tn_rmvlinenoise(data(1,:),LNFREQ,2,srate);
     data(2,:) = tn_rmvlinenoise(data(2,:),LNFREQ,2,srate);
@@ -35,8 +34,10 @@ end
 temp_data(1,:) = data(1,:);
 temp_data(2,:) = data(2,:);
 
-% transform into velocity space/differentiation
+% velocity
 v = [];
+
+% optional velocity smoothing
 %for idx = (slength+1):(size(temp_data,2)-slength)
 %    v(:,idx) = sum(-temp_data(:,idx-[1:slength]) + temp_data(:,idx+[1:slength]),2) ./ (2*sum(1:slength));
 %end
@@ -94,10 +95,8 @@ end
 for s = 1 : (size(sac,1)-1)
     if (sac(s+1,1) - sac(s,2)) <= mergeint
         sac(s+1,1) = sac(s,1);
-        sac(s,:) = nan;
-        
-    end
-    
+        sac(s,:) = nan;  
+    end  
 end
 
 sac(any(isnan(sac), 2), :) = [];
@@ -135,7 +134,6 @@ if ( nsac>0 )
         sac(s,6:7) = [dX,dY];
     end
 end
-
 end
 
 
