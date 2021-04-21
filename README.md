@@ -4,6 +4,8 @@ iLabel is a MATLAB app to manually label eye movements such as saccades/microsac
 
 These labels can be used to train the CNN U'n'Eye by Bellet et al. (2018) available at: https://github.com/berenslab/uneye
 
+For any questions/comments/concerns please contact [tim.naeher@esi-frankfurt.de](mailto:tim.naeher@esi-frankfurt.de)
+
 
 
 # References
